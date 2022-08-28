@@ -1,0 +1,35 @@
+.svg {
+    filter: drop-shadow(4px 5px 2px hsl(225, 70%, 60%));
+}
+.svg:hover {
+    cursor: pointer;
+    filter: drop-shadow(4px 5px 2px hsl(225, 100%, 80%));
+}
+.svg:active {
+    transform: translateY(-10%);
+    transition: 360ms ease-in-out;
+}
+.play {
+    background: url('./playicon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    padding: 20px;
+    width: 0%;
+    right: 0;
+    left: 0;
+    bottom: 15%;
+    margin: auto auto;
+    z-index: 1;
+}
+.pause {
+    background: url('./pauseicon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    padding: 20px;
+    width: 0%;
+    right: 0;
+    left: 0;
+    bottom: 15%;
+    margin: auto auto;
+    z-index: 1;
+}

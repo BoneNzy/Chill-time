@@ -1,0 +1,22 @@
+.quote h1 {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: hsla(0, 0%, 100%, 0.5);
+    font-family: monospace;
+    text-align: center;
+    z-index: 1;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0ch;
+}

@@ -1,0 +1,42 @@
+/* *,
+::after,
+::before {
+    box-sizing: border-box;
+} */
+body {
+    background-image: url('./images/night-view.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+}
+body::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.520);
+    inset: 0;
+    position: fixed;
+}
+/* .track-play {
+    position: absolute;
+    width: 35px;
+    right: 0;
+    left: 0;
+    bottom: 15%;
+    margin: auto;
+    z-index: 1;
+} */
+.track-fast {
+    position: absolute;
+    width: 35px;
+    right: 35%;
+    bottom: 15%;
+    z-index: 1;
+}
+.track-back {
+    position: absolute;
+    width: 35px;
+    left: 35%;
+    bottom: 15%;
+    z-index: 1;
+}
