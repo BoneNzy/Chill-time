@@ -10,7 +10,7 @@
     transition: 360ms ease-in-out;
 }
 .play {
-    background: url('./playicon.svg');
+    background: url('./svg/playicon.svg');
     background-repeat: no-repeat;
     position: absolute;
     padding: 20px;
@@ -22,7 +22,7 @@
     z-index: 1;
 }
 .pause {
-    background: url('./pauseicon.svg');
+    background: url('./svg/pauseicon.svg');
     background-repeat: no-repeat;
     position: absolute;
     padding: 20px;
