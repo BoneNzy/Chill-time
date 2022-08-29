@@ -18,6 +18,9 @@ const musicDir = [
     {
         name: "Nanoka Hara-Suzume no Tojimari",
     },
+    {
+        name: "Compared-Child",
+    },
 ];
 
 let currentMusic = 0;
