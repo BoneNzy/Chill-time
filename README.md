@@ -8,9 +8,9 @@ You can add your own songs to the `music directory` and don't forget to add it t
 
 How to add to your local device?  
 SSh  
-`git clone git@github.com:BoneNzy/Chill-time.git`
+`git clone git@github.com:BoneNzy/Chill-time.git`  
 HTML  
-`git clone https://github.com/BoneNzy/Chill-time.git`
+`git clone https://github.com/BoneNzy/Chill-time.git`  
 
 And you are good to go, enjoy your own time with it, and please raise an issue if you find a bug or you want to add something.
 
