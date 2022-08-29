@@ -3,7 +3,7 @@ const play = document.querySelector('.play');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
-//music controls
+//add the music name *must be same as the one you added to the directory*.
 
 const musicDir = [
     {
@@ -22,6 +22,8 @@ const musicDir = [
         name: "Compared-Child",
     },
 ];
+
+//music controls
 
 let currentMusic = 0;
 music.src = './music/'+musicDir[currentMusic].name+'.mp3';
