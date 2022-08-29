@@ -5,10 +5,16 @@
     margin-left: auto;
     margin-right: auto;
 
+    text-shadow: 2px 2px 3px hsla(225, 70%, 60%, 0.654);
+
     color: hsla(0, 0%, 100%, 0.5);
     font-family: monospace;
     text-align: center;
     z-index: 1;
+}
+h1:hover {
+    cursor: context-menu;
+    text-shadow: 2px 2px 3px hsla(225, 100%, 90%, 0.654);
 }
 .sr-only {
     position: absolute;

@@ -17,26 +17,23 @@ body::after {
     inset: 0;
     position: fixed;
 }
-/* .track-play {
-    position: absolute;
-    width: 35px;
-    right: 0;
-    left: 0;
-    bottom: 15%;
-    margin: auto;
-    z-index: 1;
-} */
 .track-fast {
+    background: url('./svg/fasttrack.svg');
+    background-repeat: no-repeat;
     position: absolute;
-    width: 35px;
-    right: 35%;
+    padding: 15px;
+    width: 0%;
+    right: 40%;
     bottom: 15%;
     z-index: 1;
 }
 .track-back {
+    background: url('./svg/backtrack.svg');
+    background-repeat: no-repeat;
     position: absolute;
-    width: 35px;
-    left: 35%;
+    padding: 15px;
+    width: 0%;
+    left: 40%;
     bottom: 15%;
     z-index: 1;
 }
