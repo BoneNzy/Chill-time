@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chill Time</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="trackicon.css">
-    <link rel="stylesheet" href="svg.css">
-    <script src="beats.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/trackicon.css">
+    <link rel="stylesheet" href="./styles/svg.css">
+    <link rel="stylesheet" href="./styles/progress.css">
+    <script src="./functionality/beats.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,8 +18,18 @@
         </div>
     </header>
     <main>
+        <section class="progress-sec" id="progress-container">
+            <div class="duration_indicator">
+                <span id="initial-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progressing">
+                    <span class="round-hover sr-only">o</span>
+                </div>
+            </div>
+        </section>
         <section class="music">
-            <!-- <audio src="./music/Fire Force – Opening Theme – Inferno.mp3"></audio> -->
             <audio src=""></audio>
         </section>
         <section class="music-controls track-area"  data-play="false">

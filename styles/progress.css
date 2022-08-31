@@ -1,0 +1,83 @@
+.duration_indicator {
+    position: absolute;
+    font-size: larger;
+    background: -webkit-linear-gradient(hsl(300, 100%, 60%), hsl(210, 100%, 60%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background-color: rgba(0, 255, 255, 0.314); */
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 40%;
+    bottom: 60;
+
+    margin: auto auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+.progress-sec {
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.299); */
+    width: 35%;
+    height: 15% ;
+    right: 0;
+    left: 0;
+    bottom: 20%;
+    margin: auto auto;
+
+    z-index: 1;
+}
+.progress-bar {
+    position: relative;
+    /* background-color: hsl(0, 0%, 100%); */
+    padding: 4px 0px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 60%;
+    bottom: 40%;
+
+    margin: 0;
+    z-index: 1;
+
+    transition: width 1s linear;
+    -moz-transition: widt 1s linear;
+    -o-transition: width 1s linear;
+    -webkit-transition: width 1s linear;
+    appearance: none;
+    -webkit-appearance: none;
+}
+#progressing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(133, 136, 217, 0.96),rgba(171, 255, 163, 0.96));
+    border: 0px solid transparent;
+    border-radius: 3px;
+
+    transition: width 1s linear;
+    -moz-transition: width 1s linear;
+    -o-transition: width 1s linear;
+    -webkit-transition: width 1s linear;
+    appearance: none;
+    -webkit-appearance: none;
+
+}
+#progressing:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, hsla(10, 100%, 60%, 0.96), hsla(180, 100%, 50%, 0.96));
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0ch;
+}
+
