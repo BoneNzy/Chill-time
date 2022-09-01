@@ -2,9 +2,9 @@
     position: absolute;
     font-size: larger;
     background: -webkit-linear-gradient(hsl(300, 100%, 60%), hsl(210, 100%, 60%));
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* background-color: rgba(0, 255, 255, 0.314); */
     width: 100%;
     right: 0;
     left: 0;
@@ -30,13 +30,15 @@
 }
 .progress-bar {
     position: relative;
-    /* background-color: hsl(0, 0%, 100%); */
     padding: 4px 0px;
     width: 100%;
     right: 0;
     left: 0;
     top: 60%;
     bottom: 40%;
+
+    border: 0px solid transparent;
+    border-radius: 3px;
 
     margin: 0;
     z-index: 1;
@@ -47,6 +49,10 @@
     -webkit-transition: width 1s linear;
     appearance: none;
     -webkit-appearance: none;
+}
+.progress-bar:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(141, 143, 189, 0.882),rgba(158, 205, 154, 0.882));
 }
 #progressing {
     position: absolute;

@@ -56,8 +56,6 @@ next.addEventListener('click', () => {
         tonext(currentMusic);
     }
     currentMusic = i;
-
-    console.log(currentMusic);
 });
 
 function tonext(next) {
@@ -95,7 +93,6 @@ music.addEventListener('timeupdate', (event) => {
 
     let progress_time = (currentTime / duration) * 100;
     progress.style.width = `${progress_time}%`;
-    console.log(progress_time);
 
     let min_duration = Math.floor(duration / 60);
     let sec_duration = Math.floor(duration % 60);
@@ -106,19 +103,35 @@ music.addEventListener('timeupdate', (event) => {
     }
 
     //initial-timer
+
     let initial = 0;
-    let min_initial = Math.floor(progress_time / 60);
-    let sec_initial = Math.floor(progress_time % 60);
+    let min_initial = Math.floor(currentTime / 60);
+    let sec_initial = Math.floor(currentTime % 60);
 
     if (sec_initial < 10) {
-        initial = `${min_initial}:0${sec_initial}`
+        initial = `${min_initial}:0${sec_initial}`;
     }else {
-        initial = `${min_initial}:${sec_initial}`
+        initial = `${min_initial}:${sec_initial}`;
     }
 
     if (currentTime) {
         initial_time.textContent = initial;
     }
+
+    // loop to next video
+
+    if (currentTime == duration) {
+        currentMusic = currentMusic + 1;
+        tonext(currentMusic);
+    }
 });
+//progress click functionality
 
+const progress_click = document.querySelector('.progress-bar');
 
+progress_click.addEventListener('click', (event) => {
+    const {duration} = music;
+    let move_bar = (event.offsetX / event.target.clientWidth) * duration;
+
+    music.currentTime = move_bar;
+});
