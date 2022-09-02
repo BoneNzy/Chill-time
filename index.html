@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./styles/trackicon.css">
     <link rel="stylesheet" href="./styles/svg.css">
     <link rel="stylesheet" href="./styles/progress.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/playlist.css">
     <script src="./JScript/beats.js" defer></script>
+    <script src="./JScript/trackControls.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,9 +27,7 @@
                 <span id="duration">0:00</span>
             </div>
             <div class="progress-bar">
-                <div id="progressing">
-                    <span class="round-hover sr-only">o</span>
-                </div>
+                <div id="progressing"></div>
             </div>
         </section>
         <section class="music">
@@ -36,7 +37,11 @@
             <label class="svg prev track-back" for="track-back"></label>
             <label class="svg play track-play" for="play-pause"></label>
             <label class="svg next track-fast" for="track-fast"></label>
+            <label data-playlist="false" class="svg list list-of-track" for="list"></label>
+            <label data-playlist="true" class="svg exit exit-list" for="exit-list"></label>
+            <label class="svg shuffle track-shuffle" for="shuffle"></label>
         </section>
+        <section data-playlist="false" class="playlist play-settings"></section>
     </main>
     <footer></footer>
 </body>

@@ -1,0 +1,30 @@
+@media (max-width: 1050px){
+    .track-fast {
+        width: 0%;
+        right: 35%;
+    }
+    .track-back {
+        width: 0%;
+        left: 35%;
+    }
+}
+@media (max-width: 750px){
+    .track-fast {
+        width: 0%;
+        right: 30%;
+    }
+    .track-back {
+        width: 0%;
+        left: 30%;
+    }
+}
+@media (max-width: 350px){
+    .track-fast {
+        width: 0%;
+        right: 20%;
+    }
+    .track-back {
+        width: 0%;
+        left: 20%;
+    }
+}

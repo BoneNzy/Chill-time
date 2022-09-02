@@ -1,3 +1,17 @@
+body {
+    background-image: url('./images/night-view.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+}
+body::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.520);
+    inset: 0;
+    position: fixed;
+}
 .quote h1 {
     position: relative;
     left: 0;

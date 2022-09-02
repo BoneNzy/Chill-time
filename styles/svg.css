@@ -9,27 +9,3 @@
     transform: translateY(-10%);
     transition: 360ms ease-in-out;
 }
-.play {
-    background: url('./svg/playicon.svg');
-    background-repeat: no-repeat;
-    position: absolute;
-    padding: 18px;
-    width: 0%;
-    right: 0;
-    left: 0;
-    bottom: 15%;
-    margin: auto auto;
-    z-index: 1;
-}
-.pause {
-    background: url('./svg/pauseicon.svg');
-    background-repeat: no-repeat;
-    position: absolute;
-    padding: 18px;
-    width: 0%;
-    right: 0;
-    left: 0;
-    bottom: 15%;
-    margin: auto auto;
-    z-index: 1;
-}
